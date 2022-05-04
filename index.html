@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
         <title>Job application | Survey Form</title>
     </head>
     <body>
@@ -33,44 +34,50 @@
                     <option value="full-stack">Full-stack developer</option>
                 </select>
 
-                <p>What modality would you like to apply for?</p>
-                <label for="full-time">Full time</label>
-                <input type="radio" name="modality" id="full-time">
+                <div id="modality">
+                    <p>What modality would you like to apply for?</p>
+                    <label for="full-time">Full time</label>
+                    <input type="radio" name="modality" id="full-time">
 
-                <label for="part-time">Part time</label>
-                <input type="radio" name="modality" id="part-time">
+                    <label for="part-time">Part time</label>
+                    <input type="radio" name="modality" id="part-time">
+                </div>
 
-                <p>What languages have you worked with?</p>
-                <label for="html">HTML</label>
-                <input name="languages" type="checkbox" id="html" value="html">
+                <div id="languages">
+                    <p>What languages have you worked with?</p>
+                    <label for="html">HTML</label>
+                    <input name="languages" type="checkbox" id="html" value="html">
 
-                <label for="css">CSS</label>
-                <input name="languages" type="checkbox" id="css" value="css">
+                    <label for="css">CSS</label>
+                    <input name="languages" type="checkbox" id="css" value="css">
 
-                <label for="javascript">JavaScript</label>
-                <input name="languages" type="checkbox" id="javascript" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                    <input name="languages" type="checkbox" id="javascript" value="javascript">
 
-                <label for="php">PHP</label>
-                <input name="languages" type="checkbox" id="php" value="php">
+                    <label for="php">PHP</label>
+                    <input name="languages" type="checkbox" id="php" value="php">
 
-                <label for="python">Python</label>
-                <input name="languages" type="checkbox" id="python" value="python">
+                    <label for="python">Python</label>
+                    <input name="languages" type="checkbox" id="python" value="python">
+                </div>
 
-                <p>What technologies have you worked with?</p>
-                <label for="react">React</label>
-                <input name="technologies" type="checkbox" id="react" value="react">
+                <div id="technologies">
+                    <p>What technologies have you worked with?</p>
+                    <label for="react">React</label>
+                    <input name="technologies" type="checkbox" id="react" value="react">
 
-                <label for="vue">Vue.js</label>
-                <input name="technologies" type="checkbox" id="vue" value="vue">
+                    <label for="vue">Vue.js</label>
+                    <input name="technologies" type="checkbox" id="vue" value="vue">
 
-                <label for="angular">Angular</label>
-                <input name="technologies" type="checkbox" id="angular" value="angular">
+                    <label for="angular">Angular</label>
+                    <input name="technologies" type="checkbox" id="angular" value="angular">
 
-                <label for="django">Django</label>
-                <input name="technologies" type="checkbox" id="django" value="django">
+                    <label for="django">Django</label>
+                    <input name="technologies" type="checkbox" id="django" value="django">
 
-                <label for="laravel">Laravel</label>
-                <input name="technologies" type="checkbox" id="laravel" value="laravel">
+                    <label for="laravel">Laravel</label>
+                    <input name="technologies" type="checkbox" id="laravel" value="laravel">
+                </div>
 
                 <p>Why sould we hire you?</p>
                 <textarea name="textarea" id="textarea" name="languages"></textarea>
