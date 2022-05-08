@@ -1,0 +1,145 @@
+body {
+    background-color: #1A1A40;
+    font-size: larger;
+    color: #FFF;
+    font-family: 'Acme', sans-serif;
+}
+
+h1 {
+    font-family: "teko";
+}
+
+p {
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#survey-form {
+    margin: 0 auto;
+    width: 30%;
+    background-color: #270082;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 0 10px 0 #000;
+    margin-top: 1em;
+}
+
+#survey-form div {
+    margin-top: 2em;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+[type=text], [type=email], [type=number] {
+    height: 3em;
+    border-style: none;
+    border: 2px solid #270082;
+    border-radius: 10px;
+    padding-top: 0.2em;
+    outline: none;
+    transition: .5s all ease;
+}
+
+[type=text]:focus, [type=email]:focus, [type=number]:focus {
+    border-color: #FA58B6;
+}
+
+select {
+    height: 4em;
+    border: 2px solid #270082;
+    border-radius: 10px;
+    outline: none;
+    transition: .5s all ease;
+}
+
+select:focus {
+    border-color: #FA58B6;
+}
+
+option {
+    background-color: #FFF;
+}
+
+.required {
+    color: #FA58B6;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+#textarea {
+    resize: vertical;
+    min-height: 5em;
+    border: 2px solid #270082;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.2em;
+    transition: .5s all ease;
+}
+
+#textarea:focus {
+    border-color: #FA58B6;
+}
+
+[type=submit] {
+    height: 3em;
+    background-color: #270082;
+    color: #FFF;
+    border-style: none;
+    border-radius: 50px;
+    font-size: large;
+    transition: 0.5s all ease;
+    width: 30%;
+    margin: auto;
+}
+
+[type=submit]:hover, [type=submit]:focus {
+    background-color: #FA58B6;
+    color: #1A1A40;
+    width: 100%;
+}
+
+[type=submit]:active {
+    background-color: #b83e85;
+}
+
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    width: .5em;
+    background-color: #1A1A40;
+}
+
+::-webkit-scrollbar-thumb {
+    width: .5em;
+    background-color: #b83e85;
+    border-radius: 50px;
+    transition: 0.5s all ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FA58B6;
+}
