@@ -184,21 +184,36 @@ label {
     flex-direction: row;
 }
 
-input[type="radio"]:hover, input[type="radio"]:focus {
-    animation-name: onfocus;
-    animation-duration: 0.3s;
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #FA58B6;
+    width: 1.75em;
+    height: 1.15em;
+    border: 0.15em solid #FA58B6;
+    border-radius: 50px;
+    transform: translateY(-0.075em) translateX(-0.075em);
+    display: grid;
+    place-content: start;
+    transition: 120ms all ease;
 }
 
-@keyframes onfocus {
-    0% {
-        transform: translateX(0.1em);
-    }
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transition: 120ms transform ease-in-out;
+    transform: translateY(0.1em);
+    box-shadow: inset 1em 1em #270082;
+}
 
-    50% {
-        transform: translateX(-0.1em);
-    }
+input[type="checkbox"]:checked::before {
+    transform: translate(0.75em, 0.1em);
+}
 
-    100% {
-        transform: translateX(0.1em);
-    }
+input[type="checkbox"]:checked {
+    background-color: #00ff99;
 }
