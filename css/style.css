@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1A1A40;
     font-size: larger;
@@ -142,4 +146,59 @@ input[type=number] {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #FA58B6;
+}
+
+/* checkboxes and radio buttons */
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #FA58B6;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #FA58B6;
+    border-radius: 50%;
+    transform: translateY(-0.075em) translateX(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #270082;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="radio"]:hover, input[type="radio"]:focus {
+    animation-name: onfocus;
+    animation-duration: 0.3s;
+}
+
+@keyframes onfocus {
+    0% {
+        transform: translateX(0.1em);
+    }
+
+    50% {
+        transform: translateX(-0.1em);
+    }
+
+    100% {
+        transform: translateX(0.1em);
+    }
 }
