@@ -217,3 +217,34 @@ input[type="checkbox"]:checked::before {
 input[type="checkbox"]:checked {
     background-color: #00ff99;
 }
+
+
+/* Responsive sizes */
+
+@media (max-width: 1366px) {
+    #survey-form {
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    #survey-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #survey-form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    #survey-form {
+        width: 100%;
+    }
+
+    header {
+        align-items: center;
+    }
+}
